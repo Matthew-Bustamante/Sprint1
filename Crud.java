@@ -12,6 +12,34 @@ import java.util.Scanner;
 public class Crud {
 
     public static void main(String[] args) {
+    	boolean notDone = true;
+    	Crud project = new Crud();
+    	while(notDone) {
+    		System.out.println("Enter Q to quit, C to create, R to read, U to update, D to delete");
+    		System.out.println("or P to print");
+    		Scanner userInput = new Scanner(System.in);
+    		System.out.println("Enter a valid input");
+    		String input = userInput.nextLine();
+    		
+    		if(input.equals("Q")) {
+    			notDone = false;
+    		}
+    		else if(input.equals("C")) {
+    			project.create();
+    		}
+    		else if(input.equals("R")) {
+    			project.read();
+    		}
+    		else if(input.equals("U")) {
+    			project.update();
+    		}
+    		else if(input.equals("D")) {
+    			project.delete();
+    		}
+    		else if(input.equals("P")) {
+    			project.printData();
+    		}
+    	}
 
     }
 
