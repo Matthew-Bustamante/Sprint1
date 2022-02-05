@@ -39,9 +39,6 @@ public class Crud {
     		else if(input.equals("4")) {
     			project.delete();
     		}
-    		else if(input.equals("P")) {
-    			project.printData();
-    		}
     	}
 
     }
@@ -62,20 +59,5 @@ public class Crud {
 
     }
     
-    /**
-     * @param
-     * a print method that searches the data and prints it.
-     */
-    public void printData() {
-    	int[][] data = new int [4][4]; //a set 2D array but can be changed and data type can be changed as well
-    	
-    	
-    	for(int row = 0; row < data.length; row++ ) { //for loop to loop the first part of the array
-    		for(int collumn = 0; collumn < data[row].length; collumn++) {
-    			data[row][collumn] = row * collumn;
-    			System.out.println(data[row][collumn] + "\t");// will print the data
-    		}
-    		System.out.println();// will print a new line
-    	}
-    }
 }
+
