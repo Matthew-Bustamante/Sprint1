@@ -59,6 +59,10 @@ public class Crud {
 
     }
     
+    /**
+     * @param
+     * a print method that searches the data and prints it.
+     */
     public void printData() {
     	int[][] data = new int [4][4]; //a set 2D array but can be changed and data type can be changed as well
     	
